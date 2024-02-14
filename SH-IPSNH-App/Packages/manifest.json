@@ -14,6 +14,7 @@
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
+    "dev.voltstro.unitycommandlineparser": "2.1.2",
     "dev.voltstro.unityimgui": "5.0.1",
     "dev.voltstro.unityvoltbuilder": "https://github.com/Voltstro-Studios/UnityVoltBuilder.git",
     "dev.voltstro.unitywebbrowser": "2.0.2",
