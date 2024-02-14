@@ -320,6 +320,22 @@
       "dependencies": {},
       "url": "https://upm-pkgs.voltstro.dev"
     },
+    "dev.voltstro.nuget.mono.unix": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
+    "dev.voltstro.unityimgui": {
+      "version": "5.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+      },
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
     "dev.voltstro.unityvoltbuilder": {
       "version": "https://github.com/Voltstro-Studios/UnityVoltBuilder.git",
       "depth": 0,
@@ -343,12 +359,39 @@
       },
       "url": "https://upm-pkgs.voltstro.dev"
     },
+    "dev.voltstro.unitywebbrowser.communication.pipes": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "dev.voltstro.unitywebbrowser": "2.0.0"
+      },
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
     "dev.voltstro.unitywebbrowser.engine.cef": {
       "version": "2.0.2-113.3.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "dev.voltstro.unitywebbrowser": "2.0.2"
+      },
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
+    "dev.voltstro.unitywebbrowser.engine.cef.win.x64": {
+      "version": "2.0.2-113.3.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "dev.voltstro.unitywebbrowser.engine.cef": "2.0.2-113.3.1"
+      },
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
+    "dev.voltstro.unitywebbrowser.unix-support": {
+      "version": "1.0.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "dev.voltstro.nuget.mono.unix": "1.0.0"
       },
       "url": "https://upm-pkgs.voltstro.dev"
     },
@@ -378,17 +421,26 @@
       "url": "https://upm-pkgs.voltstro.dev"
     },
     "org.nuget.system.runtime.compilerservices.unsafe": {
-      "version": "4.5.3",
-      "depth": 3,
+      "version": "6.0.0",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://upm-pkgs.voltstro.dev"
     },
     "org.nuget.voltrpc": {
-      "version": "3.1.0",
+      "version": "3.2.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://upm-pkgs.voltstro.dev"
+    },
+    "org.nuget.voltrpc.communication.pipes": {
+      "version": "3.1.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.voltrpc": "3.2.0"
+      },
       "url": "https://upm-pkgs.voltstro.dev"
     },
     "org.nuget.voltrpc.extension.memory": {
