@@ -327,15 +327,6 @@
       "dependencies": {},
       "url": "https://upm-pkgs.voltstro.dev"
     },
-    "dev.voltstro.unitycommandlineparser": {
-      "version": "2.1.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "org.nuget.mcmaster.extensions.commandlineutils": "4.0.1"
-      },
-      "url": "https://upm-pkgs.voltstro.dev"
-    },
     "dev.voltstro.unityimgui": {
       "version": "5.0.1",
       "depth": 0,
@@ -404,25 +395,9 @@
       },
       "url": "https://upm-pkgs.voltstro.dev"
     },
-    "org.nuget.mcmaster.extensions.commandlineutils": {
-      "version": "4.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "org.nuget.system.componentmodel.annotations": "5.0.0"
-      },
-      "url": "https://upm-pkgs.voltstro.dev"
-    },
     "org.nuget.system.buffers": {
       "version": "4.5.1",
       "depth": 3,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://upm-pkgs.voltstro.dev"
-    },
-    "org.nuget.system.componentmodel.annotations": {
-      "version": "5.0.0",
-      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://upm-pkgs.voltstro.dev"
