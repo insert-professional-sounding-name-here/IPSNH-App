@@ -437,7 +437,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3377454761578556880, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
       propertyPath: browserClient.initialUrl
-      value: google.com
+      value: uclan.ac.uk
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454210983313359673, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 110.399994
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454210983610425330, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 66.100006
       objectReference: {fileID: 0}
     - target: {fileID: 7454210984458747666, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
       propertyPath: m_Name
