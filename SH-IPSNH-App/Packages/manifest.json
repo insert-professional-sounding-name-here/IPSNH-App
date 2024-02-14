@@ -14,6 +14,9 @@
     "com.unity.timeline": "1.7.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.1",
+    "dev.voltstro.unityvoltbuilder": "https://github.com/Voltstro-Studios/UnityVoltBuilder.git",
+    "dev.voltstro.unitywebbrowser": "2.0.2",
+    "dev.voltstro.unitywebbrowser.engine.cef": "2.0.2-113.3.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -45,5 +48,16 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Voltstro UPM",
+      "url": "https://upm-pkgs.voltstro.dev",
+      "scopes": [
+        "dev.voltstro",
+        "org.nuget",
+        "com.cysharp.unitask"
+      ]
+    }
+  ]
 }
