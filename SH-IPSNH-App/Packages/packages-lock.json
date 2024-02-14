@@ -428,19 +428,10 @@
       "url": "https://upm-pkgs.voltstro.dev"
     },
     "org.nuget.voltrpc": {
-      "version": "3.2.0",
+      "version": "3.1.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
-      "url": "https://upm-pkgs.voltstro.dev"
-    },
-    "org.nuget.voltrpc.communication.pipes": {
-      "version": "3.1.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "org.nuget.voltrpc": "3.2.0"
-      },
       "url": "https://upm-pkgs.voltstro.dev"
     },
     "org.nuget.voltrpc.extension.memory": {
