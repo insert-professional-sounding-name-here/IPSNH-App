@@ -504,6 +504,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3377454761578556880, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
+      propertyPath: inputHandler
+      value: 
+      objectReference: {fileID: 11400000, guid: 565be9a8022a65c7288f47df26d5fe7f, type: 2}
+    - target: {fileID: 3377454761578556880, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
       propertyPath: browserClient.initialUrl
       value: https://use.mazemap.com/#v=1&campusid=368
       objectReference: {fileID: 0}
@@ -517,7 +521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7454210983610425330, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 66.100006
+      value: 66.099976
       objectReference: {fileID: 0}
     - target: {fileID: 7454210984458747666, guid: b59194ee6b7484d469d7886e9d2c9e6f, type: 3}
       propertyPath: m_Name
