@@ -21,7 +21,15 @@ EditorBuildSettings:
     path: Assets/Emergency/emergencyScreen.unity
     guid: dba3ce7f68f99f64fa8ee8d2949ae808
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 61f795adb82e8c349899f33305d58c8e, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 4f787b41fa7fdfa4080e324c91660c5a, type: 2}
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 0e55d3a41e92e664094418957c76d970, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f5ec061e8af055e4c88e8887332d5f55, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: f611335da33f797409d7ff55b9124431, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 21bf78ab4dcd68048bf9b9e89b5dc652, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 661db2c43e10bd2438d54470f31dee75, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: efb62e0fac355dd4997aab9d571c7851, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: ff2c08556414c4345ab134aef52890d8, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e217d6ed29867be438575033a1d6f82c, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0f44a85f8dab7184eb6ff449ea4047e0, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 0b90853a7da186a43bcc9b644ca88602, type: 2}
