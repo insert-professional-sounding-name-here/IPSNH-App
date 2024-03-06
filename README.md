@@ -5,4 +5,4 @@ This repo contains two files:
 
 - SPSNH-App: contains the unity code
 
-- insert-professional-sounding-name-here.github.io: contains the website which hosts the MazeMap site/code
+- MazeMap: contains the website which hosts the MazeMap site/code which is used within the unity app
