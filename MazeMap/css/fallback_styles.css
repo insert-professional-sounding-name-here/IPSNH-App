@@ -1,0 +1,26 @@
+/* Agile Profess AR App insert-professional-sounding-name-here.github.io
+This repo is only for educational use for a university assignment 
+and not to be used in a real world situation or for commerical purposes.
+This project uses MazeMap wayfinding application: Copyright MazeMap 2023 (https://www.mazemap.com).
+Copyright information can be found via the GitHub Repo */
+
+/*This file contains the CSS style needed for error messages if he the MazeMap fails to work correctly on the HTML */
+
+body
+    {
+        font-family: Arial, sans-serif; /* fall back font code (most browsers and devices) */
+        background-color: #007fb0; /* Sets background colour if map fails to load. HEX code is UCLan blue*/ 
+    }
+    
+p /* para txt colour, if map fails to load */
+    {
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+h1 /* heading1 colour, if map fails to load */
+    {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }

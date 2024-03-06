@@ -1,0 +1,160 @@
+<!--Agile Profess AR App insert-professional-sounding-name-here.github.io-->
+<!--This repo is only for educational use for a university assignment
+    and not to be used in a real world situation or for commerical purposes.-->
+<!--This project uses MazeMap wayfinding application Copyright MazeMap 2023 (https://www.mazemap.com) -->
+<!--This file contains the HMTL and JavaScript section of the map,
+CSS can be found in "styles.css file"-->
+
+<!DOCTYPE html>
+
+<!--Specifies which language to use:-->
+<html lang="en-GB">
+
+<head>
+    <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta charset="utf-8" />
+
+    <!--Links to fallback CSS sheet-->
+    <link rel="stylesheet" href="/css/fallback_styles.css">
+
+    <!--MazeMap data:-->
+    <link rel="stylesheet" href="https://api.mazemap.com/js/v2.0.114/mazemap.min.css">
+    <script type='text/javascript' src='https://api.mazemap.com/js/v2.0.114/mazemap.min.js'></script>
+
+    <style> /*MazeMap CSS Search styling*/
+        html, body 
+        {
+            position: absolute; 
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin:0px;
+            padding:0px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+            font-size: 12px;
+        }
+
+        .search-control-default /*search box loc*/
+        {
+            position: absolute;
+            margin-left: calc( (100% - 20px)*(-1/2) );
+            top: 10px;
+            width: calc(100% - 20px);
+            left: 50%;
+            max-width: 300px;
+            z-index: 999;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="map" aria-label="map view" tabindex="1" class="mazemap"></div>
+    <div id="search-input-container" class='search-control-default'>
+    <input tabindex="0" id="searchInput" class="search-input" autocomplete="off" type="text" name='search' placeholder='Search'>
+    <div id="suggestions" class="search-suggestions default"></div>
+    </div>
+
+    <p>Test - if you can see this, your broswer doesnt support JavaScript so the map will not work</p> <!--JS Failure text-->
+
+    <script> 
+    //Map scripting:
+
+        var myMap = new Mazemap.Map
+        ({
+            container: 'map',
+
+            campuses: 368, // 368 is UCLan
+
+            // Position data:
+            // initial position in lngLat format Student centre loc: 
+            // lng: -2.7071393359127285, lat: 53.76267154967661
+
+            center: {lng: -2.7071393359127285, lat: 53.76267154967661},
+
+            zoom: 16,
+            zLevel: 1,
+            zLevelControl: false,
+            scrollZoom: true,
+
+            doubleClickZoom: true, // users can double click to zoom in
+            touchZoomRotate: true // users can rotate
+        });
+
+        myMap.on('load', function() //adds Z bar controls (floor controls)
+        {
+            var customZLevelBar1 = new Mazemap.ZLevelBarControl
+            ({
+                className: 'custom-zlevel-bar',
+                autoUpdate: true,
+                maxHeight: 300
+            });
+
+            myMap.addControl( customZLevelBar1, 'bottom-right' ); //floor control loction on screen
+        });
+
+        var mySearch = new Mazemap.Search.SearchController //limits search function to UCLan, so only uclan rooms show in results
+        ({
+            campusid: 368, //UCLan campus ID
+            rows: 10, //How many results show up
+            withpois: true,
+            withbuilding: false,
+            withtype: false,
+            withcampus: false,
+            resultsFormat: 'geojson'
+        });
+
+        //Create a new instance of the Mazemap SearchInput
+        var mySearchInput = new Mazemap.Search.SearchInput
+        ({
+            //The container for the search input
+            container: document.getElementById('search-input-container'),
+            //The actual search input element
+            input: document.getElementById('searchInput'),
+            //The element where search suggestions will be displayed
+            suggestions: document.getElementById('suggestions'),
+            //The search controller that handles the search logic
+            searchController: mySearch
+        })
+
+        .on('itemclick', function(e)
+        {
+            var poiFeature = e.item;
+            placePoiMarker( poiFeature );
+        });
+
+        var resultMarker = new Mazemap.MazeMarker
+        ({
+            color: 'rgb(253, 117, 38)',
+            innerCircle: true,
+            innerCircleColor: '#FFF',
+            size: 34,
+            innerCircleScale: 0.5,
+            zLevel: 1
+        })
+
+        function placePoiMarker(poi)
+        {
+            // Get a center point for the POI, because the data can return a polygon instead of just a point sometimes
+            var lngLat = Mazemap.Util.getPoiLngLat(poi);
+            var zLevel = poi.properties.zValue;
+
+            resultMarker
+            .setLngLat(lngLat)
+            .setZLevel(poi.properties.zValue)
+            .addTo(myMap);
+
+            myMap.zLevel = zLevel;
+
+            myMap.flyTo({center: lngLat, zoom: 19, duration: 2000});
+        }
+
+        myMap.getCanvas().addEventListener('focus', function()
+        {
+            mySearchInput.hideSuggestions();
+        });
+
+    </script>
+</body>
