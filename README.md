@@ -50,10 +50,10 @@ MazeMap uses campus IDs to show campuses around the world, UCLan campus ID is 36
 ## Copyright information
 
 #### This repo is only for educational use for a university assignment and not to be used in a real-world situation or for commercial purposes. All copyrights are reserved to their respective owners. 
-#### MazeMap and related services are provided by MazeMap AS. 
+#### MazeMap and related services are provided by MazeMap AS. MazeMap © 2023
 - MazeMap Terms can be found at: https://www.mazemap.com/terms
-#### The  UCLan logo is owned by the University of Central Lancashire.
+#### The  UCLan logo is owned by the University of Central Lancashire. © 2024 The University of Central Lancashire
 - University of Central Lancashire copyrgiht information can be found at: https://www.uclan.ac.uk/legal/copyright
-### "Unity", Unity logos, and other Unity trademarks are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere 
+#### "Unity", Unity logos, and other Unity trademarks are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere Copyright © 2024 Unity Technologies
 - Unity AR information can be found at: https://unity.com/unity/features/ar & https://docs.unity3d.com/Manual/AROverview.html
 - https://unity.com/legal/trademarks
