@@ -54,4 +54,6 @@ MazeMap uses campus IDs to show campuses around the world, UCLan campus ID is 36
 - MazeMap Terms can be found at: https://www.mazemap.com/terms
 #### The  UCLan logo is owned by the University of Central Lancashire.
 - University of Central Lancashire copyrgiht information can be found at: https://www.uclan.ac.uk/legal/copyright
+### "Unity", Unity logos, and other Unity trademarks are trademarks or registered trademarks of Unity Technologies or its affiliates in the U.S. and elsewhere 
 - Unity AR information can be found at: https://unity.com/unity/features/ar & https://docs.unity3d.com/Manual/AROverview.html
+- https://unity.com/legal/trademarks
