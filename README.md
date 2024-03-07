@@ -12,6 +12,8 @@ This repo contains two files:
 
 Each branch was worked on by different people, each branch has each team members name
 
+This app contains code taken from code bases, such as Unity's inbuilt AR and Mobile 2D templates used for its assistance in setting up the AR and the app as a whole. 
+
 # IPSNH.github.io MazeMap
 
 The HTML site is used to host the embedded map for our uni assignment app.
